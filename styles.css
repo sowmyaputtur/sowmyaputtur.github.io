@@ -178,6 +178,19 @@ button { color: inherit; font: inherit; }
 .timeline-item > div > p { max-width: 495px; margin: 0 0 12px; color: #a29f95; font-size: 10px; line-height: 1.8; }
 .timeline-item .tag-row span { padding: 4px 7px; font-size: 7px; }
 
+.credentials-section { padding-top: 100px; padding-bottom: 108px; }
+.credential-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.credential-card { position: relative; display: flex; min-height: 91px; align-items: center; gap: 17px; padding: 17px 19px; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(105deg, rgba(237, 96, 75, 0.045), transparent 72%); }
+.credential-mark { display: grid; width: 39px; height: 39px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; color: var(--red); font-size: 17px; }
+.credential-type { margin: 0 0 4px; color: #8e8a7f; font: 8px var(--mono); letter-spacing: 0.65px; }
+.credential-card h3 { margin: 0; color: var(--paper); font-size: 13px; font-weight: 500; }
+.credential-number { position: absolute; right: 13px; bottom: -14px; color: rgba(240, 238, 231, 0.065); font-size: 53px; font-weight: 700; letter-spacing: -5px; line-height: 1; }
+.impact-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 27px; padding-top: 23px; border-top: 1px solid var(--line); }
+.impact-strip > div { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
+.impact-strip strong { color: var(--paper); font-size: 26px; letter-spacing: -1.5px; }
+.impact-strip strong span { color: var(--red); font-size: 19px; }
+.impact-strip p { max-width: 225px; margin: 0; color: #a29f95; font-size: 9px; line-height: 1.65; }
+
 .toolkit-section { padding-top: 102px; padding-bottom: 122px; background: #151513; }
 .toolkit-grid { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 13px; }
 .toolkit-card { min-height: 218px; padding: 22px 21px; border: 1px solid var(--line); background: rgba(240, 238, 231, 0.015); }
@@ -282,6 +295,7 @@ button { color: inherit; font: inherit; }
   .journey-intro { display: grid; grid-template-columns: 42px 1fr; align-items: center; column-gap: 8px; }
   .journey-intro > p { margin: 0; }
   .journey-intro .text-link { grid-column: 2; justify-self: start; margin-top: 8px; }
+  .credential-card { padding-right: 14px; padding-left: 14px; }
   .toolkit-grid { grid-template-columns: 1fr 1fr; }
   .toolkit-card { min-height: 190px; padding: 18px 16px; }
   .toolkit-featured { grid-column: 1 / -1; min-height: 175px; }
@@ -322,6 +336,11 @@ button { color: inherit; font: inherit; }
   .timeline-item h3 { font-size: 13px; line-height: 1.5; }
   .timeline-item h3 span { display: block; }
   .timeline-item > div > p { font-size: 9px; }
+  .credential-grid { grid-template-columns: 1fr; }
+  .credential-card { min-height: 79px; }
+  .impact-strip { gap: 13px; }
+  .impact-strip > div { grid-template-columns: 1fr; gap: 2px; align-content: start; }
+  .impact-strip p { font-size: 8px; }
   .toolkit-grid { grid-template-columns: 1fr; }
   .toolkit-featured { grid-column: auto; }
   .toolkit-card { min-height: auto; }
