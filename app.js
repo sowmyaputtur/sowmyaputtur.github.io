@@ -6,7 +6,7 @@ const projects = {
     detail: "Product categories, search and sorting lead into product details and a persistent cart with quantity controls, delivery calculations and order summaries. The demo checkout supports UPI, card and cash-on-delivery flows; no real payments are processed.",
     tags: ["Next.js 15", "React", "TypeScript", "CSS"],
     href: "https://github.com/sowmyaputtur/portfolio-next.js",
-    liveUrl: "https://portfolio-next-7zf847sqh-sowmyaputtur.vercel.app/"
+    liveUrl: "https://portfolio-next-js-tau-seven.vercel.app/"
   },
   banking: {
     eyebrow: "FINTECH · VUE 3",
