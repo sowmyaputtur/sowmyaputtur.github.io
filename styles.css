@@ -237,7 +237,11 @@ button { color: inherit; font: inherit; }
 .project-dialog h2 { margin: 0 0 14px; font-size: clamp(27px, 7vw, 39px); font-weight: 500; letter-spacing: -1.5px; line-height: 1.15; }
 .dialog-description { margin: 0 0 21px; color: #b4b1a8; font-size: 12px; line-height: 1.9; }
 .dialog-detail { margin-bottom: 21px; padding-left: 15px; border-left: 1px solid var(--red); color: #dedbd3; font-size: 11px; line-height: 1.85; }
-.dialog-link { margin-top: 27px; }
+.dialog-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 27px; }
+.dialog-link { min-width: 125px; }
+.button-outline { border-color: var(--line); background: transparent; color: var(--paper); }
+.button-outline:hover { border-color: var(--red); color: var(--red); }
+.dialog-link[hidden] { display: none; }
 .certificate-dialog { position: fixed; width: min(1040px, calc(100% - 36px)); height: min(850px, calc(100% - 36px)); max-height: none; padding: 20px; overflow: hidden; border: 1px solid rgba(240, 238, 231, 0.19); background: #1c1b18; color: var(--paper); box-shadow: 0 24px 120px rgba(0, 0, 0, 0.65); }
 .certificate-dialog::backdrop { background: rgba(5, 5, 5, 0.82); backdrop-filter: blur(5px); }
 .certificate-dialog-header { display: flex; min-height: 56px; align-items: center; justify-content: space-between; gap: 16px; padding: 0 47px 13px 2px; }
