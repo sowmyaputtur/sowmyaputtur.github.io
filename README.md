@@ -8,8 +8,9 @@ Open `index.html` in a browser, or serve this folder with any static web server.
 
 ## Update content
 
-- Edit portfolio copy, work history, skills and links in `index.html`.
+- Edit portfolio copy, work history, skills, credentials and links in `index.html`.
 - Edit the project detail dialog content and filtering in `app.js`.
 - Adjust colors, type and responsive layouts in `styles.css`.
+- Store the certificate PDFs linked in the Credentials section under `assets/certifications/`.
 
-The portrait uses the public GitHub profile image. The project cards link to the matching public repositories. The supplied resume is available from the career section; contact email, phone and LinkedIn are also taken from the resume.
+The project cards link to the matching public repositories. The supplied resume is available from the career section; contact email and LinkedIn are also taken from the resume.

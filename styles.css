@@ -180,11 +180,13 @@ button { color: inherit; font: inherit; }
 
 .credentials-section { padding-top: 100px; padding-bottom: 108px; }
 .credential-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
-.credential-card { position: relative; display: flex; min-height: 91px; align-items: center; gap: 17px; padding: 17px 19px; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(105deg, rgba(237, 96, 75, 0.045), transparent 72%); }
+.credential-card { position: relative; display: flex; min-height: 91px; align-items: center; gap: 17px; padding: 17px 19px; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(105deg, rgba(237, 96, 75, 0.045), transparent 72%); color: var(--paper); text-decoration: none; transition: border-color 180ms ease, background 180ms ease; }
+.credential-card:hover, .credential-card:focus-visible { border-color: rgba(237, 96, 75, 0.55); background: linear-gradient(105deg, rgba(237, 96, 75, 0.1), transparent 78%); }
+.credential-card:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 .credential-mark { display: grid; width: 39px; height: 39px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; color: var(--red); font-size: 17px; }
 .credential-type { margin: 0 0 4px; color: #8e8a7f; font: 8px var(--mono); letter-spacing: 0.65px; }
 .credential-card h3 { margin: 0; color: var(--paper); font-size: 13px; font-weight: 500; }
-.credential-number { position: absolute; right: 13px; bottom: -14px; color: rgba(240, 238, 231, 0.065); font-size: 53px; font-weight: 700; letter-spacing: -5px; line-height: 1; }
+.credential-action { position: relative; z-index: 1; margin-left: auto; flex: 0 0 auto; color: var(--red); font: 7px var(--mono); letter-spacing: 0.35px; white-space: nowrap; }
 .impact-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 27px; padding-top: 23px; border-top: 1px solid var(--line); }
 .impact-strip > div { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
 .impact-strip strong { color: var(--paper); font-size: 26px; letter-spacing: -1.5px; }
@@ -338,6 +340,10 @@ button { color: inherit; font: inherit; }
   .timeline-item > div > p { font-size: 9px; }
   .credential-grid { grid-template-columns: 1fr; }
   .credential-card { min-height: 79px; }
+  .credential-card { gap: 11px; padding-right: 11px; padding-left: 11px; }
+  .credential-mark { width: 33px; height: 33px; }
+  .credential-card h3 { font-size: 12px; }
+  .credential-action { font-size: 6px; }
   .impact-strip { gap: 13px; }
   .impact-strip > div { grid-template-columns: 1fr; gap: 2px; align-content: start; }
   .impact-strip p { font-size: 8px; }
