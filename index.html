@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10100f">
+    <meta name="description" content="Sowmya Puttur is a Toronto-based senior frontend engineer building thoughtful, accessible web experiences with React, TypeScript and Angular.">
+    <title>Sowmya Puttur — The Frontend Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Sowmya Puttur, home">
+        <span class="wordmark-mark">SP<span>.</span></span>
+        <span class="wordmark-name">SOWMYA <span>PUTTUR</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#story">The story</a>
+        <a href="#work">Selected work</a>
+        <a href="#skills">The toolkit</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> A FRONTEND ORIGINAL <span class="eyebrow-rule"></span> TORONTO, CANADA</p>
+          <h1 id="hero-title">MADE OF<br><span>GOOD</span> <em>ideas.</em></h1>
+          <p class="hero-description">I’m <strong>Sowmya Puttur</strong> — a senior frontend engineer turning complex problems into clear, considered digital experiences.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#work"><span class="play-icon" aria-hidden="true">▶</span> Explore my work</a>
+            <a class="button button-quiet" href="#story">Meet the engineer <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><strong>8.5+</strong> years building for the web</span>
+            <span class="meta-divider" aria-hidden="true"></span>
+            <span>React <i>·</i> TypeScript <i>·</i> Angular</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Portrait of Sowmya Puttur">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="portrait-halo"></div>
+          <div class="portrait-frame">
+            <img class="portrait" src="https://avatars.githubusercontent.com/u/86069873?v=4" alt="Sowmya Puttur" fetchpriority="high">
+            <div class="portrait-wash"></div>
+          </div>
+          <p class="portrait-caption"><span>THE HUMAN BEHIND THE UI</span><span>01 / 04</span></p>
+          <div class="floating-note note-top"><span class="note-spark" aria-hidden="true">✳</span> Pixel thoughtful.<br>People first.</div>
+          <div class="floating-note note-bottom"><span class="status-dot"></span> OPEN TO GREAT IDEAS</div>
+        </div>
+        <a class="scroll-cue" href="#story"><span></span> SCROLL TO WATCH</a>
+      </section>
+
+      <section class="proof-strip" aria-label="Career highlights">
+        <div class="proof-item"><strong>8.5<span>+</span></strong><span>years of experience</span></div>
+        <div class="proof-separator" aria-hidden="true"></div>
+        <div class="proof-item"><strong>30<span>%</span></strong><span>faster component delivery</span></div>
+        <div class="proof-separator" aria-hidden="true"></div>
+        <div class="proof-item"><strong>25<span>%</span></strong><span>better order processing</span></div>
+        <div class="proof-endnote">A few good numbers<br>from the journey <span>✳</span></div>
+      </section>
+
+      <section class="section story-section" id="story" aria-labelledby="story-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="section-index">01</span> THE PILOT</p>
+          <span class="section-side-note">A little context before the credits roll</span>
+        </div>
+        <div class="story-grid">
+          <div class="story-title-wrap">
+            <h2 id="story-title">A good interface<br>should feel <em>effortless.</em></h2>
+            <div class="signature">Sowmya Puttur <span>— frontend engineer</span></div>
+          </div>
+          <div class="story-copy">
+            <p class="story-lead">The best frontend work is equal parts engineering discipline and empathy.</p>
+            <p>For 8.5+ years, I’ve built the screens people rely on — from secure, data-heavy enterprise platforms to the small details that make shopping feel simple. I care about thoughtful architecture, accessible interactions and the last 10% of polish.</p>
+            <p>Based in Toronto, I work across React, Redux, TypeScript and Angular, partnering with product teams to turn complicated requirements into something that just makes sense.</p>
+            <a class="text-link" href="mailto:sowmyaputtur0110@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">02</span> SELECTED ORIGINALS</p>
+            <h2 id="work-title">A few things I’ve <em>made.</em></h2>
+          </div>
+          <div class="work-controls" role="group" aria-label="Filter projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>03</span></button>
+            <button class="filter-button" type="button" data-filter="react" aria-pressed="false">React</button>
+            <button class="filter-button" type="button" data-filter="vue" aria-pressed="false">Vue</button>
+            <button class="filter-button" type="button" data-filter="team" aria-pressed="false">Team project</button>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="react" data-project="store">
+            <button class="project-open" type="button" aria-label="View details for Electronics Store">
+              <div class="project-poster poster-store">
+                <span class="poster-kicker">NEXT.JS 15 / REACT</span>
+                <div class="store-scene" aria-hidden="true"><span class="store-sun"></span><span class="store-phone"></span><span class="store-tablet"></span><span class="store-spark">✳</span></div>
+                <span class="poster-number">01</span>
+                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">E-COMMERCE · INDEPENDENT BUILD</p><h3>Electronics Store</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">A considered shopping experience, from the first search to checkout.</p>
+              <div class="tag-row"><span>Next.js</span><span>TypeScript</span><span>Cart UX</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-category="vue" data-project="banking">
+            <button class="project-open" type="button" aria-label="View details for Online Banking Dashboard">
+              <div class="project-poster poster-banking">
+                <span class="poster-kicker">VUE 3 / TYPESCRIPT</span>
+                <div class="bank-scene" aria-hidden="true"><span class="bank-window"><i></i><i></i><i></i><b></b></span><span class="bank-orb"></span><span class="bank-line"></span></div>
+                <span class="poster-number">02</span>
+                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">FINTECH · INDEPENDENT BUILD</p><h3>Online Banking Dashboard</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">A calmer way to see your money, move it and keep track.</p>
+              <div class="tag-row"><span>Vue 3</span><span>Pinia</span><span>Playwright</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-category="team" data-project="sap">
+            <button class="project-open" type="button" aria-label="View details for SAP Integration Hub">
+              <div class="project-poster poster-sap">
+                <span class="poster-kicker">REACT / TEAM PROJECT</span>
+                <div class="sap-scene" aria-hidden="true"><span class="sap-node node-a">UI</span><span class="sap-node node-b">API</span><span class="sap-node node-c">OPS</span><span class="sap-link link-a"></span><span class="sap-link link-b"></span><span class="sap-center">↗</span></div>
+                <span class="poster-number">03</span>
+                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">DEVELOPER TOOLS · TEAM PROJECT</p><h3>SAP Integration Hub</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">A collaborative integration hub built to help DevOps teams move faster.</p>
+              <div class="tag-row"><span>React</span><span>Integrations</span><span>Collaboration</span></div>
+            </button>
+          </article>
+        </div>
+        <a class="text-link all-projects-link" href="https://github.com/Sowmyaputtur?tab=repositories" target="_blank" rel="noreferrer">Browse my GitHub repositories <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">03</span> THE LONG GAME</p>
+            <h2 id="journey-title">Every chapter, <em>a new challenge.</em></h2>
+          </div>
+          <span class="section-side-note">2017 — 2026 <span class="live-dot"></span></span>
+        </div>
+        <div class="journey-layout">
+          <div class="journey-intro">
+            <span class="journey-mark" aria-hidden="true">✳</span>
+            <p>Big teams. Real users.<br>Work that <em>ships.</em></p>
+            <a class="text-link" href="assets/Sowmya_Puttur_Senior_Frontend_React_Engineer_Resume.docx" download>Download my résumé (DOCX) <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-year">2023 — 2026</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Senior Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">MICROSOFT · DYNO NOBEL · AVERY DENNISON</p><p>Delivered React and Angular enterprise platforms, secure SSO and accessible experiences. Built reusable components that improved team efficiency by 30%.</p><div class="tag-row"><span>React</span><span>Redux</span><span>Angular</span><span>MSAL</span></div></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2021 — 2022</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">JOHNSON CONTROLS</p><p>Built mobile product experiences with secure biometric onboarding, localized controls and responsive scheduling flows.</p><div class="tag-row"><span>React Native</span><span>Mobile UX</span><span>Localization</span></div></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2019 — 2021</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Associate Interactive Developer <span>· Echidna</span></h3><p class="timeline-client">WIAKUM · DUBAI PET FOOD</p><p>Built customer-facing retail journeys, from sign-in and carts to order history and returns — contributing to a 25% improvement in order-processing efficiency.</p><div class="tag-row"><span>React</span><span>Redux</span><span>E-commerce</span></div></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2017 — 2019</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Software Engineer <span>· Agiledge Process Solutions</span></h3><p class="timeline-client">TELE RADIO LLC</p><p>Designed and implemented a PIN configurator interface for Tele Radio devices.</p><div class="tag-row"><span>Frontend</span><span>UI engineering</span></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section toolkit-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">04</span> THE TOOLKIT</p>
+            <h2 id="skills-title">Fluent in the <em>details.</em></h2>
+          </div>
+          <span class="section-side-note">Tools are better when they work together</span>
+        </div>
+        <div class="toolkit-grid">
+          <article class="toolkit-card toolkit-featured"><span class="toolkit-count">01 / THE DAILY DRIVERS</span><h3>Frontend</h3><div class="skill-chips"><span>React</span><span>TypeScript</span><span>Redux</span><span>Angular</span><span>JavaScript</span><span>Next.js</span><span>Vue.js</span><span>React Native</span></div></article>
+          <article class="toolkit-card"><span class="toolkit-count">02 / BUILT TO LAST</span><h3>Quality &amp; access</h3><div class="skill-chips"><span>WCAG 2.1 AA</span><span>Playwright</span><span>Cypress</span><span>React Testing Library</span><span>Karma</span><span>Jasmine</span></div></article>
+          <article class="toolkit-card"><span class="toolkit-count">03 / BEYOND THE SCREEN</span><h3>Delivery</h3><div class="skill-chips"><span>REST APIs</span><span>Azure DevOps</span><span>GitHub</span><span>Azure SQL</span><span>Agile</span><span>Code reviews</span></div></article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-deco" aria-hidden="true">✳</div>
+        <p class="eyebrow"><span class="live-dot"></span> THE NEXT CHAPTER</p>
+        <h2 id="contact-title">Let’s make<br>something <em>matter.</em></h2>
+        <p class="contact-copy">Have a thoughtful project, a tricky frontend problem, or just want to talk shop? My inbox is open.</p>
+        <a class="button button-light contact-button" href="mailto:sowmyaputtur0110@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/sowmya-puttur" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Sowmyaputtur" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="mailto:sowmyaputtur0110@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a href="tel:+14375189894">Phone <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark">SP<span>.</span></span><span class="wordmark-name">SOWMYA <span>PUTTUR</span></span></a>
+      <span>Made with care in Toronto, Canada <span class="footer-star">✳</span></span>
+      <a href="#top">BACK TO TOP ↑</a>
+      <span class="copyright">© <span id="year">2026</span> SOWMYA PUTTUR</span>
+    </footer>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+      <p class="eyebrow dialog-eyebrow"></p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-description"></p>
+      <div class="dialog-detail"></div>
+      <div class="dialog-tags tag-row"></div>
+      <a class="button button-light dialog-link" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>
