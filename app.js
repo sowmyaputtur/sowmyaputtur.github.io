@@ -5,7 +5,7 @@ const projects = {
     description: "A responsive electronics storefront built around a useful, low-friction shopping journey.",
     detail: "Product categories, search and sorting lead into product details and a persistent cart with quantity controls, delivery calculations and order summaries. The demo checkout supports UPI, card and cash-on-delivery flows; no real payments are processed.",
     tags: ["Next.js 15", "React", "TypeScript", "CSS"],
-    href: "https://github.com/Sowmyaputtur/portfolio-next.js"
+    href: "https://github.com/sowmyaputtur/portfolio-next.js"
   },
   banking: {
     eyebrow: "FINTECH · VUE 3",
@@ -13,7 +13,7 @@ const projects = {
     description: "An account dashboard that makes everyday banking feel clear and manageable.",
     detail: "Built with Vue 3's Composition API, the app brings an account overview, validated transfer form and transaction history into one responsive experience. Pinia manages state, with Vitest and Playwright covering the key journeys.",
     tags: ["Vue 3", "TypeScript", "Pinia", "Vitest", "Playwright"],
-    href: "https://github.com/Sowmyaputtur/portfolio-vue.js"
+    href: "https://github.com/sowmyaputtur/portfolio-vue.js"
   },
   sap: {
     eyebrow: "DEVELOPER TOOLS · INDEPENDENT BUILD",
@@ -21,7 +21,7 @@ const projects = {
     description: "An integration hub built to help DevOps teams move faster.",
     detail: "The React project brings integration workflows together and reduces repetitive setup for the DevOps team.",
     tags: ["React", "Team collaboration", "DevOps"],
-    href: "https://github.com/Sowmyaputtur/sapintegrationhub"
+    href: "https://github.com/sowmyaputtur/sapintegrationhub"
   }
 };
 
