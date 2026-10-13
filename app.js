@@ -14,7 +14,8 @@ const projects = {
     description: "An account dashboard that makes everyday banking feel clear and manageable.",
     detail: "Built with Vue 3's Composition API, the app brings an account overview, validated transfer form and transaction history into one responsive experience. Pinia manages state, with Vitest and Playwright covering the key journeys.",
     tags: ["Vue 3", "TypeScript", "Pinia", "Vitest", "Playwright"],
-    href: "https://github.com/sowmyaputtur/portfolio-vue.js"
+    href: "https://github.com/sowmyaputtur/portfolio-vue.js",
+    liveUrl: "https://portfolio-vue-js-eight.vercel.app/"
   },
   sap: {
     eyebrow: "DEVELOPER TOOLS · INDEPENDENT BUILD",
