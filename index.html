@@ -201,11 +201,11 @@
           <span class="section-side-note">A few milestones along the way</span>
         </div>
         <div class="credential-grid">
-          <a class="credential-card" href="assets/certifications/infosys-certified-react-web-developer.pdf" target="_blank" rel="noreferrer"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>React Web Developer</h3></div><span class="credential-action">VIEW PDF ↗</span></a>
-          <a class="credential-card" href="assets/certifications/infosys-certified-react-expert.pdf" target="_blank" rel="noreferrer"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>React Expert</h3></div><span class="credential-action">VIEW PDF ↗</span></a>
-          <a class="credential-card" href="assets/certifications/infosys-certified-google-cloud-associate-engineer.pdf" target="_blank" rel="noreferrer"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Google Cloud Associate Engineer</h3></div><span class="credential-action">VIEW PDF ↗</span></a>
-          <a class="credential-card" href="assets/certifications/infosys-certified-front-end-web-developer.pdf" target="_blank" rel="noreferrer"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Front End Web Developer</h3></div><span class="credential-action">VIEW PDF ↗</span></a>
-          <a class="credential-card" href="assets/certifications/infosys-certified-angular-web-developer.pdf" target="_blank" rel="noreferrer"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Angular Web Developer</h3></div><span class="credential-action">VIEW PDF ↗</span></a>
+          <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>React Web Developer</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-react-web-developer.pdf" data-title="React Web Developer" aria-label="View React Web Developer certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
+          <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>React Expert</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-react-expert.pdf" data-title="React Expert" aria-label="View React Expert certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
+          <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Google Cloud Associate Engineer</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-google-cloud-associate-engineer.pdf" data-title="Google Cloud Associate Engineer" aria-label="View Google Cloud Associate Engineer certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
+          <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Front End Web Developer</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-front-end-web-developer.pdf" data-title="Front End Web Developer" aria-label="View Front End Web Developer certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
+          <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>Angular Web Developer</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-angular-web-developer.pdf" data-title="Angular Web Developer" aria-label="View Angular Web Developer certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
         </div>
         <div class="impact-strip" aria-label="Selected professional impact">
           <div><strong>30<span>%</span></strong><p>development efficiency gained through reusable components</p></div>
@@ -256,6 +256,14 @@
       <div class="dialog-detail"></div>
       <div class="dialog-tags tag-row"></div>
       <a class="button button-light dialog-link" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+    </dialog>
+    <dialog class="certificate-dialog" aria-labelledby="certificate-title">
+      <div class="certificate-dialog-header">
+        <div><p class="eyebrow">CERTIFICATE</p><h2 id="certificate-title"></h2></div>
+        <button class="dialog-close certificate-close" type="button" aria-label="Close certificate">×</button>
+      </div>
+      <iframe class="certificate-viewer" title="Certificate PDF"></iframe>
+      <a class="certificate-fallback" target="_blank" rel="noreferrer">Open certificate in a new tab ↗</a>
     </dialog>
   </body>
 </html>

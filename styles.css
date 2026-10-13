@@ -186,7 +186,10 @@ button { color: inherit; font: inherit; }
 .credential-mark { display: grid; width: 39px; height: 39px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; color: var(--red); font-size: 17px; }
 .credential-type { margin: 0 0 4px; color: #8e8a7f; font: 8px var(--mono); letter-spacing: 0.65px; }
 .credential-card h3 { margin: 0; color: var(--paper); font-size: 13px; font-weight: 500; }
-.credential-action { position: relative; z-index: 1; margin-left: auto; flex: 0 0 auto; color: var(--red); font: 7px var(--mono); letter-spacing: 0.35px; white-space: nowrap; }
+.credential-action { position: relative; z-index: 1; display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; margin-left: auto; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; background: transparent; color: var(--red); cursor: pointer; transition: background 180ms ease, color 180ms ease; }
+.credential-action:hover, .credential-action:focus-visible { background: var(--red); color: var(--ink); }
+.credential-action:focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
+.credential-action svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
 .impact-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 27px; padding-top: 23px; border-top: 1px solid var(--line); }
 .impact-strip > div { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 14px; }
 .impact-strip strong { color: var(--paper); font-size: 26px; letter-spacing: -1.5px; }
@@ -233,6 +236,15 @@ button { color: inherit; font: inherit; }
 .dialog-description { margin: 0 0 21px; color: #b4b1a8; font-size: 12px; line-height: 1.9; }
 .dialog-detail { margin-bottom: 21px; padding-left: 15px; border-left: 1px solid var(--red); color: #dedbd3; font-size: 11px; line-height: 1.85; }
 .dialog-link { margin-top: 27px; }
+.certificate-dialog { position: fixed; width: min(1040px, calc(100% - 36px)); height: min(850px, calc(100% - 36px)); max-height: none; padding: 20px; overflow: hidden; border: 1px solid rgba(240, 238, 231, 0.19); background: #1c1b18; color: var(--paper); box-shadow: 0 24px 120px rgba(0, 0, 0, 0.65); }
+.certificate-dialog::backdrop { background: rgba(5, 5, 5, 0.82); backdrop-filter: blur(5px); }
+.certificate-dialog-header { display: flex; min-height: 56px; align-items: center; justify-content: space-between; gap: 16px; padding: 0 47px 13px 2px; }
+.certificate-dialog-header .eyebrow { color: var(--red); font-size: 8px; }
+.certificate-dialog-header h2 { margin: 3px 0 0; font-size: 18px; font-weight: 500; letter-spacing: -0.4px; }
+.certificate-close { top: 15px; right: 15px; }
+.certificate-viewer { display: block; width: 100%; height: calc(100% - 85px); border: 1px solid var(--line); background: #fff; }
+.certificate-fallback { display: inline-block; margin-top: 8px; color: #c2beb5; font: 8px var(--mono); }
+.certificate-fallback:hover { color: var(--red); }
 
 [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity 650ms ease, transform 650ms ease; }
 [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
@@ -358,6 +370,11 @@ button { color: inherit; font: inherit; }
   .site-footer > a:nth-of-type(2) { justify-self: end; font-size: 7px; }
   .copyright { font-size: 7px; }
   .project-dialog { padding: 34px 23px 25px; }
+  .certificate-dialog { width: calc(100% - 20px); height: calc(100% - 20px); padding: 12px; }
+  .certificate-dialog-header { min-height: 55px; }
+  .certificate-dialog-header h2 { max-width: calc(100vw - 112px); font-size: 14px; }
+  .certificate-close { top: 11px; right: 11px; }
+  .certificate-viewer { height: calc(100% - 82px); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

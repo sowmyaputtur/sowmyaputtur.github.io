@@ -28,6 +28,7 @@ const projects = {
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".primary-nav");
 const projectDialog = document.querySelector(".project-dialog");
+const certificateDialog = document.querySelector(".certificate-dialog");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function closeMenu() {
@@ -94,6 +95,32 @@ document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
   if (projectDialog.open) projectDialog.close();
   if (navigation.classList.contains("is-open")) closeMenu();
+});
+
+document.querySelectorAll(".credential-action").forEach((button) => {
+  button.addEventListener("click", () => {
+    const certificatePath = button.dataset.certificate;
+    const certificateTitle = button.dataset.title;
+    if (!certificatePath || !certificateTitle) return;
+
+    certificateDialog.querySelector("#certificate-title").textContent = certificateTitle;
+    certificateDialog.querySelector(".certificate-viewer").src = certificatePath;
+    certificateDialog.querySelector(".certificate-fallback").href = certificatePath;
+    certificateDialog.showModal();
+  });
+});
+
+function closeCertificateDialog() {
+  certificateDialog.querySelector(".certificate-viewer").removeAttribute("src");
+  certificateDialog.close();
+}
+
+certificateDialog.querySelector(".certificate-close").addEventListener("click", closeCertificateDialog);
+certificateDialog.addEventListener("click", (event) => {
+  if (event.target === certificateDialog) closeCertificateDialog();
+});
+certificateDialog.addEventListener("close", () => {
+  certificateDialog.querySelector(".certificate-viewer").removeAttribute("src");
 });
 
 const revealTargets = document.querySelectorAll(".section-heading, .story-grid, .project-card, .journey-intro, .timeline-item, .toolkit-card");
