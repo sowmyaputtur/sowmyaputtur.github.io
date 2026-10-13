@@ -16,10 +16,10 @@ const projects = {
     href: "https://github.com/Sowmyaputtur/portfolio-vue.js"
   },
   sap: {
-    eyebrow: "DEVELOPER TOOLS · TEAM PROJECT",
+    eyebrow: "DEVELOPER TOOLS · INDEPENDENT BUILD",
     title: "SAP Integration Hub",
-    description: "A team-built integration hub designed to help DevOps teams move faster.",
-    detail: "Contributed to a React project focused on bringing integration workflows together and reducing repetitive setup for the DevOps team.",
+    description: "An integration hub built to help DevOps teams move faster.",
+    detail: "The React project brings integration workflows together and reduces repetitive setup for the DevOps team.",
     tags: ["React", "Team collaboration", "DevOps"],
     href: "https://github.com/Sowmyaputtur/sapintegrationhub"
   }

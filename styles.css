@@ -186,6 +186,8 @@ button { color: inherit; font: inherit; }
 .credential-mark { display: grid; width: 39px; height: 39px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; color: var(--red); font-size: 17px; }
 .credential-type { margin: 0 0 4px; color: #8e8a7f; font: 8px var(--mono); letter-spacing: 0.65px; }
 .credential-card h3 { margin: 0; color: var(--paper); font-size: 13px; font-weight: 500; }
+.credential-description { margin: 4px 0 0; color: #a29f95; font-size: 9px; line-height: 1.5; }
+.credential-card-no-view { cursor: default; }
 .credential-action { position: relative; z-index: 1; display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; margin-left: auto; border: 1px solid rgba(237, 96, 75, 0.42); border-radius: 50%; background: transparent; color: var(--red); cursor: pointer; transition: background 180ms ease, color 180ms ease; }
 .credential-action:hover, .credential-action:focus-visible { background: var(--red); color: var(--ink); }
 .credential-action:focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
