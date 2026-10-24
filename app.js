@@ -1,4 +1,34 @@
 const projects = {
+  finance: {
+    eyebrow: "ENTERPRISE FINANCE · PROFESSIONAL DELIVERY",
+    title: "Enterprise Finance Platform",
+    description: "A responsive finance application for managing expense-allocation rules and large transaction datasets.",
+    detail: "Built React and Fluent UI experiences for rule setup, questionnaire forms and editable financial data. Connected the interface to REST APIs and Azure SQL, used Redux to manage large datasets, and implemented MSAL single sign-on with token handling, route guards and role-based access. Reusable components contributed to a 30% improvement in development efficiency. Client work; product details and source code are not public.",
+    tags: ["React", "Redux", "TypeScript", "Fluent UI", "MSAL", "Azure SQL"]
+  },
+  vetting: {
+    eyebrow: "ENTERPRISE ACCESS MANAGEMENT · PROFESSIONAL DELIVERY",
+    title: "Enterprise Vetting Platform",
+    description: "Angular modules for user-access validation, access reviews and administrative tracking.",
+    detail: "Built reusable Angular and TypeScript modules with RxJS Observables and BehaviorSubjects. Implemented access-review grids, data forms, search, filtering, sorting and pagination through shared REST API services. Improved keyboard and screen-reader support to meet WCAG 2.1 AA and maintained Jasmine, Karma and Playwright coverage. Client work; product details and source code are not public.",
+    tags: ["Angular", "TypeScript", "RxJS", "REST APIs", "WCAG 2.1 AA", "Playwright"]
+  },
+  petshop: {
+    eyebrow: "ECHIDNA · DUBAI PET FOOD",
+    title: "Dubai Pet Food",
+    description: "Retail and e-commerce features for a customer-facing pet food storefront.",
+    detail: "Worked with React and Redux on identity verification, sign-up and login, dynamic shopping carts and order execution. Integrated backend APIs for live transactional data and developed order-history and product-return tracking experiences. Contributed to a 25% improvement in order-processing efficiency through application performance, accessibility and user-experience improvements.",
+    tags: ["React", "Redux", "REST APIs", "E-commerce", "Accessibility"],
+    liveUrl: "https://www.thepetshop.com/"
+  },
+  wiakum: {
+    eyebrow: "ECHIDNA · WIAKUM",
+    title: "Wiakum E-commerce Platform",
+    description: "Customer-facing e-commerce features for a platform serving customers in the Kingdom of Saudi Arabia.",
+    detail: "Contributed to end-to-end development using React and Redux, implementing account sign-in, sign-up, orders, password recovery and REST API integrations.",
+    tags: ["React", "Redux", "REST APIs", "E-commerce"],
+    liveUrl: "https://wiakum.com/"
+  },
   store: {
     eyebrow: "E-COMMERCE · NEXT.JS 15",
     title: "Electronics Store",
@@ -52,7 +82,7 @@ navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 
 document.querySelectorAll(".filter-button").forEach((filterButton) => {
   filterButton.addEventListener("click", () => {
-    const selectedFilter = filterButton.dataset.filter;
+    const selectedShowcase = filterButton.dataset.filter;
     document.querySelectorAll(".filter-button").forEach((button) => {
       const isActive = button === filterButton;
       button.classList.toggle("is-active", isActive);
@@ -60,7 +90,7 @@ document.querySelectorAll(".filter-button").forEach((filterButton) => {
     });
 
     document.querySelectorAll(".project-card").forEach((card) => {
-      card.classList.toggle("is-hidden", selectedFilter !== "all" && card.dataset.category !== selectedFilter);
+      card.classList.toggle("is-hidden", card.dataset.showcase !== selectedShowcase);
     });
   });
 });
@@ -81,10 +111,15 @@ function showProject(projectKey) {
     return element;
   }));
 
-  projectDialog.querySelector(".dialog-github-link").href = project.href;
+  const repositoryLink = projectDialog.querySelector(".dialog-github-link");
+  repositoryLink.hidden = !project.href;
+  if (project.href) repositoryLink.href = project.href;
+  else repositoryLink.removeAttribute("href");
+
   const liveLink = projectDialog.querySelector(".dialog-live-link");
   liveLink.hidden = !project.liveUrl;
   if (project.liveUrl) liveLink.href = project.liveUrl;
+  else liveLink.removeAttribute("href");
   projectDialog.showModal();
 }
 

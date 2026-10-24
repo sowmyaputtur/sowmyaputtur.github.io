@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#10100f">
-    <meta name="description" content="Sowmya Puttur is a Toronto-based senior frontend engineer building thoughtful, accessible web experiences with React, TypeScript and Angular.">
-    <title>Sowmya Puttur — The Frontend Story</title>
+    <meta name="theme-color" content="#07111f">
+    <meta name="description" content="Sowmya Puttur is a Toronto-based senior frontend engineer with 8.5+ years of experience building accessible React, TypeScript and Angular applications.">
+    <meta property="og:title" content="Sowmya Puttur — Senior Frontend Engineer">
+    <meta property="og:description" content="Senior frontend engineer building accessible enterprise products with React, Angular and TypeScript.">
+    <meta property="og:type" content="website">
+    <title>Sowmya Puttur — Senior Frontend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=banking-live-d7f335e">
-    <script src="app.js?v=banking-live-d7f335e" defer></script>
+    <link rel="stylesheet" href="styles.css?v=canada-watermark-v4">
+    <script src="app.js?v=frontend-portfolio-20261023" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,10 +26,11 @@
         <span></span><span></span>
       </button>
       <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-        <a href="#story">The story</a>
+        <a href="#story">About</a>
         <a href="#work">Selected work</a>
+        <a href="#journey">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#credentials">Credentials</a>
-        <a href="#skills">The toolkit</a>
         <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -34,18 +38,35 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-grain" aria-hidden="true"></div>
+        <img class="canada-watermark" src="assets/canada-dotted-map.png" alt="" aria-hidden="true">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="live-dot"></span> A FRONTEND ORIGINAL <span class="eyebrow-rule"></span> TORONTO, CANADA</p>
-          <h1 id="hero-title">MADE OF<br><span>GOOD</span> <em>ideas.</em></h1>
-          <p class="hero-description">I’m <strong>Sowmya Puttur</strong> — a senior frontend engineer turning complex problems into clear, considered digital experiences.</p>
+          <p class="eyebrow availability-badge"><span class="live-dot"></span> OPEN TO WORK <span class="availability-divider" aria-hidden="true">·</span> TORONTO, CANADA</p>
+          <h1 id="hero-title">Sowmya <span>Puttur</span></h1>
+          <p class="hero-role">Senior Frontend Engineer <span>·</span> React <span>·</span> Angular</p>
+          <div class="hero-skill-groups" aria-label="Additional frontend skills">
+            <div class="hero-skill-group">
+              <span class="hero-skill-label">Frameworks</span>
+              <div class="hero-skill-chips"><span>React Native</span><span>Next.js</span><span>Vue.js</span></div>
+            </div>
+            <div class="hero-skill-group">
+              <span class="hero-skill-label">State &amp; APIs</span>
+              <div class="hero-skill-chips"><span>Redux</span><span>RxJS</span><span>REST APIs</span></div>
+            </div>
+            <div class="hero-skill-group">
+              <span class="hero-skill-label">Quality &amp; delivery</span>
+              <div class="hero-skill-chips"><span>WCAG 2.1 AA</span><span>Playwright</span><span>Cypress</span><span>Azure DevOps</span></div>
+            </div>
+          </div>
+          <p class="hero-description">I’m <strong>Sowmya Puttur</strong>, a Toronto-based frontend engineer with 8.5+ years of experience building accessible enterprise and e-commerce applications with React and Angular.</p>
           <div class="hero-actions">
-            <a class="button button-light" href="#work"><span class="play-icon" aria-hidden="true">▶</span> Explore my work</a>
-            <a class="button button-quiet" href="#story">Meet the engineer <span aria-hidden="true">↓</span></a>
+            <a class="button button-light" href="#work">View selected work <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="assets/Sowmya_Puttur_Senior_Frontend_React_Engineer_Resume.docx" download>Download résumé <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://www.linkedin.com/in/sowmya-puttur" target="_blank" rel="noopener noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
           </div>
           <div class="hero-meta">
-            <span><strong>8.5+</strong> years building for the web</span>
+            <span><strong>8.5+</strong> years in frontend engineering</span>
             <span class="meta-divider" aria-hidden="true"></span>
-            <span>React <i>·</i> TypeScript <i>·</i> Angular</span>
+            <span>React <i>·</i> Angular <i>·</i> TypeScript</span>
           </div>
         </div>
         <div class="hero-art" aria-label="Portrait of Sowmya Puttur">
@@ -56,37 +77,35 @@
             <img class="portrait" src="assets/sowmya-puttur.png" alt="Sowmya Puttur" fetchpriority="high">
             <div class="portrait-wash"></div>
           </div>
-          <p class="portrait-caption"><span>THE HUMAN BEHIND THE UI</span><span>01 / 04</span></p>
-          <div class="floating-note note-top"><span class="note-spark" aria-hidden="true">✳</span> Pixel thoughtful.<br>People first.</div>
-          <div class="floating-note note-bottom"><span class="status-dot"></span> OPEN TO GREAT IDEAS</div>
+          <p class="portrait-caption"><span>SOWMYA PUTTUR</span><span>TORONTO, CANADA</span></p>
         </div>
-        <a class="scroll-cue" href="#story"><span></span> SCROLL TO WATCH</a>
+        <a class="scroll-cue" href="#story"><span></span> ABOUT ME</a>
       </section>
 
       <section class="proof-strip" aria-label="Career highlights">
         <div class="proof-item"><strong>8.5<span>+</span></strong><span>years of experience</span></div>
         <div class="proof-separator" aria-hidden="true"></div>
-        <div class="proof-item"><strong>30<span>%</span></strong><span>faster component delivery</span></div>
+        <div class="proof-item"><strong>30<span>%</span></strong><span>development efficiency from reusable components</span></div>
         <div class="proof-separator" aria-hidden="true"></div>
         <div class="proof-item"><strong>25<span>%</span></strong><span>better order processing</span></div>
-        <div class="proof-endnote">A few good numbers<br>from the journey <span>✳</span></div>
+        <div class="proof-endnote">SELECTED<br>CAREER IMPACT</div>
       </section>
 
       <section class="section story-section" id="story" aria-labelledby="story-title">
         <div class="section-heading">
-          <p class="eyebrow"><span class="section-index">01</span> THE PILOT</p>
-          <span class="section-side-note">A little context before the credits roll</span>
+          <p class="eyebrow"><span class="section-index">01</span> ABOUT</p>
+          <span class="section-side-note">Toronto, Canada · Available for frontend opportunities</span>
         </div>
         <div class="story-grid">
           <div class="story-title-wrap">
-            <h2 id="story-title">A good interface<br>should feel <em>effortless.</em></h2>
-            <div class="signature">Sowmya Puttur <span>— frontend engineer</span></div>
+            <h2 id="story-title">About<br><em>Sowmya Puttur</em></h2>
+            <div class="signature">Senior frontend engineer</div>
           </div>
           <div class="story-copy">
-            <p class="story-lead">The best frontend work is equal parts engineering discipline and empathy.</p>
-            <p>For 8.5+ years, I’ve built the screens people rely on — from secure, data-heavy enterprise platforms to the small details that make shopping feel simple. I care about thoughtful architecture, accessible interactions and the last 10% of polish.</p>
-            <p>Based in Toronto, I work across React, Redux, TypeScript and Angular, partnering with product teams to turn complicated requirements into something that just makes sense.</p>
-            <a class="text-link" href="mailto:sowmyaputtur0110@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+            <p class="story-lead">I develop reliable, accessible interfaces for enterprise and customer-facing products.</p>
+            <p>Across 8.5+ years in enterprise software, retail and mobile, I’ve delivered data-heavy workflows, secure sign-in, reusable component systems and customer-facing shopping journeys. My work has helped improve development efficiency by 30% and order-processing efficiency by 25%.</p>
+            <p>I bring extensive experience with React and Angular, alongside Redux and TypeScript, and a strong commitment to WCAG 2.1 AA accessibility, testing and close product-team collaboration.</p>
+            <a class="text-link" href="mailto:sowmyaputtur0110@gmail.com">Contact me <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -94,62 +113,142 @@
       <section class="section work-section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow"><span class="section-index">02</span> SELECTED ORIGINALS</p>
-            <h2 id="work-title">A few things I’ve <em>made.</em></h2>
+            <p class="eyebrow"><span class="section-index">02</span> SELECTED WORK</p>
+            <h2 id="work-title">Selected projects</h2>
           </div>
-          <div class="work-controls" role="group" aria-label="Filter projects">
-            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>03</span></button>
-            <button class="filter-button" type="button" data-filter="react" aria-pressed="false">React</button>
-            <button class="filter-button" type="button" data-filter="vue" aria-pressed="false">Vue</button>
-            <button class="filter-button" type="button" data-filter="independent" aria-pressed="false">Independent build</button>
+          <div class="work-controls" role="group" aria-label="Choose a project category">
+            <button class="filter-button is-active" type="button" data-filter="enterprise" aria-pressed="true">Enterprise Solutions <span>04</span></button>
+            <button class="filter-button" type="button" data-filter="personal" aria-pressed="false">Personal Showcase <span>03</span></button>
           </div>
         </div>
         <div class="project-grid">
-          <article class="project-card" data-category="react" data-project="store">
+          <article class="project-card" data-showcase="enterprise" data-category="enterprise react" data-project="finance">
+            <button class="project-open" type="button" aria-label="View details for Enterprise Finance Platform">
+              <div class="project-poster poster-finance">
+                <span class="poster-kicker">REACT / REDUX / TYPESCRIPT</span>
+                <div class="finance-scene" aria-hidden="true">
+                  <div class="finance-panel"><span></span><span></span><span></span><b></b><i></i><i></i><i></i></div>
+                  <span class="finance-orbit"></span>
+                </div>
+                <span class="poster-number">01</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">INFOSYS · MICROSOFT</p><h3>Enterprise Finance Platform</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">Secure, data-rich finance workflows designed to make complex allocation tasks clear.</p>
+              <div class="tag-row"><span>React</span><span>Redux</span><span>MSAL</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-showcase="enterprise" data-category="enterprise angular" data-project="vetting">
+            <button class="project-open" type="button" aria-label="View details for Enterprise Vetting Platform">
+              <div class="project-poster poster-vetting">
+                <span class="poster-kicker">ANGULAR / TYPESCRIPT / RXJS</span>
+                <div class="vetting-scene" aria-hidden="true">
+                  <div class="vetting-panel"><span></span><span></span><span></span><i></i><i></i><i></i><b></b></div>
+                  <span class="vetting-check">✓</span>
+                </div>
+                <span class="poster-number">02</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">INFOSYS · MICROSOFT</p><h3>Enterprise Vetting Platform</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">Accessible Angular modules for access reviews, user validation and administrative workflows.</p>
+              <div class="tag-row"><span>Angular</span><span>TypeScript</span><span>RxJS</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-showcase="enterprise" data-category="enterprise react" data-project="petshop">
+            <button class="project-open" type="button" aria-label="View details for Dubai Pet Food">
+              <div class="project-poster poster-petshop">
+                <span class="poster-kicker">DUBAI PET FOOD · E-COMMERCE</span>
+                <div class="petshop-scene" aria-hidden="true">
+                  <span class="petshop-sun"></span>
+                  <span class="petshop-bag"></span>
+                  <span class="petshop-bowl"></span>
+                  <span class="petshop-spark petshop-spark-one">✳</span>
+                  <span class="petshop-spark petshop-spark-two">✳</span>
+                </div>
+                <span class="poster-number">03</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">ECHIDNA · RETAIL &amp; E-COMMERCE</p><h3>Dubai Pet Food</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">React and Redux shopping journeys for identity, cart, orders and product returns.</p>
+              <div class="tag-row"><span>React</span><span>Redux</span><span>E-commerce</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-showcase="enterprise" data-category="enterprise react" data-project="wiakum">
+            <button class="project-open" type="button" aria-label="View details for Wiakum">
+              <div class="project-poster poster-wiakum">
+                <span class="poster-kicker">WIAKUM · E-COMMERCE</span>
+                <div class="wiakum-scene" aria-hidden="true">
+                  <span class="wiakum-orbit"></span>
+                  <span class="wiakum-screen"></span>
+                  <span class="wiakum-tile tile-one"></span>
+                  <span class="wiakum-tile tile-two"></span>
+                  <span class="wiakum-tile tile-three"></span>
+                </div>
+                <span class="poster-number">04</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
+              </div>
+              <div class="project-info">
+                <div><p class="project-type">ECHIDNA · CUSTOMER E-COMMERCE</p><h3>Wiakum</h3></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-summary">React and Redux features for account access, shopping orders and REST API integration.</p>
+              <div class="tag-row"><span>React</span><span>Redux</span><span>REST APIs</span></div>
+            </button>
+          </article>
+          <article class="project-card is-hidden" data-showcase="personal" data-category="personal react" data-project="store">
             <button class="project-open" type="button" aria-label="View details for Electronics Store">
               <div class="project-poster poster-store">
                 <span class="poster-kicker">NEXT.JS 15 / REACT</span>
                 <div class="store-scene" aria-hidden="true"><span class="store-sun"></span><span class="store-phone"></span><span class="store-tablet"></span><span class="store-spark">✳</span></div>
-                <span class="poster-number">01</span>
-                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+                <span class="poster-number">05</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
               </div>
               <div class="project-info">
                 <div><p class="project-type">E-COMMERCE · INDEPENDENT BUILD</p><h3>Electronics Store</h3></div>
                 <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="project-summary">A considered shopping experience, from the first search to checkout.</p>
+              <p class="project-summary">A responsive storefront with product search, cart management and a validated demo checkout.</p>
               <div class="tag-row"><span>Next.js</span><span>TypeScript</span><span>Cart UX</span></div>
             </button>
           </article>
-          <article class="project-card" data-category="vue" data-project="banking">
+          <article class="project-card is-hidden" data-showcase="personal" data-category="personal vue" data-project="banking">
             <button class="project-open" type="button" aria-label="View details for Online Banking Dashboard">
               <div class="project-poster poster-banking">
                 <span class="poster-kicker">VUE 3 / TYPESCRIPT</span>
                 <div class="bank-scene" aria-hidden="true"><span class="bank-window"><i></i><i></i><i></i><b></b></span><span class="bank-orb"></span><span class="bank-line"></span></div>
-                <span class="poster-number">02</span>
-                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+                <span class="poster-number">06</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
               </div>
               <div class="project-info">
                 <div><p class="project-type">FINTECH · INDEPENDENT BUILD</p><h3>Online Banking Dashboard</h3></div>
                 <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="project-summary">A calmer way to see your money, move it and keep track.</p>
+              <p class="project-summary">A responsive banking dashboard with account summaries, transfers and transaction history.</p>
               <div class="tag-row"><span>Vue 3</span><span>Pinia</span><span>Playwright</span></div>
             </button>
           </article>
-          <article class="project-card" data-category="independent" data-project="sap">
+          <article class="project-card is-hidden" data-showcase="personal" data-category="personal react" data-project="sap">
             <button class="project-open" type="button" aria-label="View details for SAP Integration Hub">
               <div class="project-poster poster-sap">
                 <span class="poster-kicker">REACT / INDEPENDENT BUILD</span>
                 <div class="sap-scene" aria-hidden="true"><span class="sap-node node-a">UI</span><span class="sap-node node-b">API</span><span class="sap-node node-c">OPS</span><span class="sap-link link-a"></span><span class="sap-link link-b"></span><span class="sap-center">↗</span></div>
-                <span class="poster-number">03</span>
-                <span class="poster-view">VIEW THE STORY <b aria-hidden="true">↗</b></span>
+                <span class="poster-number">07</span>
+                <span class="poster-view">VIEW PROJECT <b aria-hidden="true">↗</b></span>
               </div>
               <div class="project-info">
                 <div><p class="project-type">DEVELOPER TOOLS · INDEPENDENT BUILD</p><h3>SAP Integration Hub</h3></div>
                 <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="project-summary">A collaborative integration hub built to help DevOps teams move faster.</p>
+              <p class="project-summary">A React integration hub project developed with a team to support DevOps workflows.</p>
               <div class="tag-row"><span>React</span><span>Integrations</span><span>Collaboration</span></div>
             </button>
           </article>
@@ -160,33 +259,37 @@
       <section class="section journey-section" id="journey" aria-labelledby="journey-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow"><span class="section-index">03</span> THE LONG GAME</p>
-            <h2 id="journey-title">Every chapter, <em>a new challenge.</em></h2>
+            <p class="eyebrow"><span class="section-index">03</span> EXPERIENCE</p>
+            <h2 id="journey-title">Professional experience</h2>
           </div>
-          <span class="section-side-note">2017 — 2026 <span class="live-dot"></span></span>
+          <span class="section-side-note">2017 — 2026</span>
         </div>
         <div class="journey-layout">
           <div class="journey-intro">
-            <span class="journey-mark" aria-hidden="true">✳</span>
-            <p>Big teams. Real users.<br>Work that <em>ships.</em></p>
-            <a class="text-link" href="assets/Sowmya_Puttur_Senior_Frontend_React_Engineer_Resume.docx" download>Download my résumé (DOCX) <span aria-hidden="true">↓</span></a>
+            <span class="journey-mark" aria-hidden="true">8.5+</span>
+            <p>Years of frontend<br>engineering experience</p>
+            <a class="text-link" href="assets/Sowmya_Puttur_Senior_Frontend_React_Engineer_Resume.docx" download>Download résumé (DOCX) <span aria-hidden="true">↓</span></a>
           </div>
           <div class="timeline">
             <article class="timeline-item">
-              <span class="timeline-year">2023 — 2026</span><span class="timeline-dot" aria-hidden="true"></span>
-              <div><h3>Senior Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">MICROSOFT · DYNO NOBEL · AVERY DENNISON</p><p>Delivered React and Angular enterprise platforms, secure SSO and accessible experiences. Built reusable components that improved team efficiency by 30%.</p><div class="tag-row"><span>React</span><span>Redux</span><span>Angular</span><span>MSAL</span></div></div>
+              <span class="timeline-year">APR 2023 — AUG 2026</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Senior Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">MICROSOFT</p><p>Built a React, Redux and Fluent UI finance platform for expense-allocation rules and large financial datasets. Delivered rule setup, questionnaires and editable grids with client-side validation, integrating REST APIs with Azure SQL and MSAL sign-in, token handling and role-based route access.</p><p>Also developed Angular and TypeScript modules for access reviews, user validation and administration using RxJS. Implemented shared search, filtering, sorting and pagination; improved keyboard and screen-reader support to meet WCAG 2.1 AA.</p><p>Added React Testing Library, Cypress, Jasmine, Karma and Playwright coverage; helped establish code-review practices for GitHub Copilot and delivered an API-schema testing proof of concept through Azure DevOps. Reusable components improved development efficiency by 30%.</p><div class="tag-row"><span>React</span><span>Redux</span><span>Angular</span><span>MSAL</span><span>WCAG 2.1 AA</span></div></div>
             </article>
             <article class="timeline-item">
-              <span class="timeline-year">2021 — 2022</span><span class="timeline-dot" aria-hidden="true"></span>
-              <div><h3>Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">JOHNSON CONTROLS</p><p>Built mobile product experiences with secure biometric onboarding, localized controls and responsive scheduling flows.</p><div class="tag-row"><span>React Native</span><span>Mobile UX</span><span>Localization</span></div></div>
+              <span class="timeline-year">DEC 2022 — MAR 2023</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">DYNO NOBEL · AVERY DENNISON</p><p>For Dyno Nobel, developed the Vibrations feature with CSV uploads, REST API integration and Material UI components, including modals, alerts and sliders. Added unit tests with React Testing Library.</p><p>For Avery Dennison, created reusable text inputs and dropdowns, added localization, and built React Native experiences for return assessments, scan history and terms and conditions with API integration.</p><div class="tag-row"><span>React</span><span>React Native</span><span>Material UI</span><span>Localization</span></div></div>
             </article>
             <article class="timeline-item">
-              <span class="timeline-year">2019 — 2021</span><span class="timeline-dot" aria-hidden="true"></span>
-              <div><h3>Associate Interactive Developer <span>· Echidna</span></h3><p class="timeline-client">WIAKUM · DUBAI PET FOOD</p><p>Built customer-facing retail journeys, from sign-in and carts to order history and returns — contributing to a 25% improvement in order-processing efficiency.</p><div class="tag-row"><span>React</span><span>Redux</span><span>E-commerce</span></div></div>
+              <span class="timeline-year">AUG 2021 — DEC 2022</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Associate Consultant <span>· Infosys</span></h3><p class="timeline-client">JOHNSON CONTROLS</p><p>Developed and optimized features for the Selection Navigator mobile application. Implemented secure login and onboarding using fingerprint, Face ID and MPIN authentication, and built localized date pickers and scheduling controls.</p><div class="tag-row"><span>React Native</span><span>Biometric authentication</span><span>Localization</span></div></div>
             </article>
             <article class="timeline-item">
-              <span class="timeline-year">2017 — 2019</span><span class="timeline-dot" aria-hidden="true"></span>
-              <div><h3>Software Engineer <span>· Agiledge Process Solutions</span></h3><p class="timeline-client">TELE RADIO LLC</p><p>Designed and implemented a PIN configurator interface for Tele Radio devices.</p><div class="tag-row"><span>Frontend</span><span>UI engineering</span></div></div>
+              <span class="timeline-year">MAY 2019 — AUG 2021</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Associate Interactive Developer <span>· Echidna</span></h3><p class="timeline-client"><a href="https://www.thepetshop.com/" target="_blank" rel="noopener noreferrer">DUBAI PET FOOD <span aria-hidden="true">↗</span></a><span aria-hidden="true"> · </span><a href="https://wiakum.com/" target="_blank" rel="noopener noreferrer">WIAKUM <span aria-hidden="true">↗</span></a></p><p>For Dubai Pet Food, built React and Redux e-commerce journeys covering identity verification, sign-up and login, dynamic carts and order execution. Integrated live transactional APIs and developed order-history and returns experiences. Contributed to a 25% improvement in order-processing efficiency through performance, accessibility and UX improvements.</p><p>For Wiakum, contributed to end-to-end development of a customer e-commerce platform serving the Kingdom of Saudi Arabia. Implemented login, sign-up, orders, password recovery and REST API integrations using React and Redux.</p><div class="tag-row"><span>React</span><span>Redux</span><span>E-commerce</span><span>REST APIs</span></div></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">NOV 2017 — MAY 2019</span><span class="timeline-dot" aria-hidden="true"></span>
+              <div><h3>Software Engineer <span>· Agiledge Process Solutions</span></h3><p class="timeline-client">TELE RADIO LLC</p><p>Designed and implemented the user interface for a PIN configurator, supporting configuration of Tele Radio devices.</p><div class="tag-row"><span>Frontend</span><span>UI engineering</span><span>Device configuration</span></div></div>
             </article>
           </div>
         </div>
@@ -196,9 +299,9 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow"><span class="section-index">04</span> CREDENTIALS &amp; IMPACT</p>
-            <h2 id="credentials-title">Good work, <em>recognized.</em></h2>
+            <h2 id="credentials-title">Certifications &amp; impact</h2>
           </div>
-          <span class="section-side-note">A few milestones along the way</span>
+          <span class="section-side-note">Professional development and measurable results</span>
         </div>
         <div class="credential-grid">
           <article class="credential-card"><span class="credential-mark" aria-hidden="true">✳</span><div><p class="credential-type">INFOSYS CERTIFICATION</p><h3>React Web Developer</h3></div><button class="credential-action" type="button" data-certificate="assets/certifications/infosys-certified-react-web-developer.pdf" data-title="React Web Developer" aria-label="View React Web Developer certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></article>
@@ -218,23 +321,23 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow"><span class="section-index">05</span> THE TOOLKIT</p>
-            <h2 id="skills-title">Fluent in the <em>details.</em></h2>
+            <h2 id="skills-title">Technical skills</h2>
           </div>
-          <span class="section-side-note">Tools are better when they work together</span>
+          <span class="section-side-note">Frontend, quality engineering and delivery</span>
         </div>
         <div class="toolkit-grid">
           <article class="toolkit-card toolkit-featured"><span class="toolkit-count">01 / THE DAILY DRIVERS</span><h3>Frontend</h3><div class="skill-chips"><span>React</span><span>TypeScript</span><span>Redux</span><span>Angular</span><span>JavaScript</span><span>Next.js</span><span>Vue.js</span><span>React Native</span></div></article>
-          <article class="toolkit-card"><span class="toolkit-count">02 / BUILT TO LAST</span><h3>Quality &amp; access</h3><div class="skill-chips"><span>WCAG 2.1 AA</span><span>Playwright</span><span>Cypress</span><span>React Testing Library</span><span>Karma</span><span>Jasmine</span></div></article>
+          <article class="toolkit-card"><span class="toolkit-count">02 / QUALITY ENGINEERING</span><h3>Quality &amp; access</h3><div class="skill-chips"><span>WCAG 2.1 AA</span><span>Playwright</span><span>Cypress</span><span>React Testing Library</span><span>Karma</span><span>Jasmine</span></div></article>
           <article class="toolkit-card"><span class="toolkit-count">03 / BEYOND THE SCREEN</span><h3>Delivery</h3><div class="skill-chips"><span>REST APIs</span><span>Azure DevOps</span><span>GitHub</span><span>Azure SQL</span><span>Agile</span><span>Code reviews</span></div></article>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-deco" aria-hidden="true">✳</div>
-        <p class="eyebrow"><span class="live-dot"></span> THE NEXT CHAPTER</p>
-        <h2 id="contact-title">Let’s make<br>something <em>matter.</em></h2>
-        <p class="contact-copy">Have a thoughtful project, a tricky frontend problem, or just want to talk shop? My inbox is open.</p>
-        <a class="button button-light contact-button" href="mailto:sowmyaputtur0110@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow"><span class="live-dot"></span> CONTACT</p>
+        <h2 id="contact-title">Contact Sowmya</h2>
+        <p class="contact-copy">For frontend engineering opportunities and professional inquiries, please get in touch.</p>
+        <a class="button button-light contact-button" href="mailto:sowmyaputtur0110@gmail.com">Email me <span aria-hidden="true">↗</span></a>
         <div class="contact-socials">
           <a href="https://www.linkedin.com/in/sowmya-puttur" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/sowmyaputtur" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>

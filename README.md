@@ -13,4 +13,4 @@ Open `index.html` in a browser, or serve this folder with any static web server.
 - Adjust colors, type and responsive layouts in `styles.css`.
 - Store the certificate PDFs shown in the Credentials section under `assets/certifications/`; the view icons open them in an in-page dialog.
 
-The project cards link to the matching public repositories. The supplied resume is available from the career section; contact email and LinkedIn are also taken from the resume.
+The independent project cards link to their public repositories and live demos where available. The Enterprise Finance Platform card summarizes professional client work; its source code and product details are not public. The supplied resume is available from the hero and career sections; contact email and LinkedIn are taken from the resume.
